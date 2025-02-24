@@ -48,7 +48,7 @@
         justify-items: center;
         text-align: center;
       }
-      .container {
+      .qr-code {
         width: 320px;
         background-color: var(--white-color);
         display: flex;
@@ -63,7 +63,7 @@
         border-radius: 10px;
         align-self: center;
       }
-      .wrapper {
+      .qr-code__info {
         display: flex;
         flex-direction: column;
         gap: var(--spacing-200);
@@ -81,15 +81,19 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <img src="./images/image-qr-code.png" alt="QR code" />
-      <div class="wrapper">
+    <main class="qr-code">
+      <img
+        src="./images/image-qr-code.png"
+        alt="QR code"
+        aria-label="QR code leading to Frontend Mentor"
+      />
+      <div class="qr-code__info">
         <h1>Improve your front-end skills by building projects</h1>
         <p>
           Scan the QR code to visit Frontend Mentor and take your coding skills
           to the next level
         </p>
       </div>
-    </div>
+    </main>
   </body>
 </html>
